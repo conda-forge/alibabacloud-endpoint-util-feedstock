@@ -1,5 +1,5 @@
 {% set name = "alibabacloud-endpoint-util" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/alibabacloud_endpoint_util-{{ version }}.tar.gz
-  sha256: 8c0efb76fdcc3af4ca716ef24bbce770201a3f83f98c0afcf81655f684b9c7d2
+  sha256: a593eb8ddd8168d5dc2216cd33111b144f9189fcd6e9ca20e48f358a739bbf90
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
