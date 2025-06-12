@@ -21,7 +21,6 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - alibabacloud-tea >=0.0.1
 
 test:
   imports:
